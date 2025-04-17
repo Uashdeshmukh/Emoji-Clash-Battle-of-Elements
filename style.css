@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #fceabb, #f8b500);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.game-container {
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.2);
+  max-width: 700px;
+  width: 90%;
+}
+
+h1 {
+  color: #f57c00;
+  font-size: 2.5rem;
+}
+
+.players {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.player h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.choices {
+  display: flex;
+  gap: 20px;
+}
+
+.emoji {
+  font-size: 3rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.emoji:hover {
+  transform: scale(1.3);
+}
+
+.vs {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f57c00;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-content {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  animation: popin 0.4s ease;
+}
+
+.popup-content button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #f57c00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes popin {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+} 
