@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Emoji Battle Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>Emoji Battle</h1>
+
+    <div class="players">
+      <div class="player">
+        <h2>Player 1</h2>
+        <div class="choices" id="player1">
+          <span class="emoji" data-choice="fire">🔥</span>
+          <span class="emoji" data-choice="water">💧</span>
+          <span class="emoji" data-choice="leaf">🍃</span>
+        </div>
+      </div>
+
+      <div class="vs">VS</div>
+
+      <div class="player">
+        <h2>Player 2</h2>
+        <div class="choices" id="player2">
+          <span class="emoji" data-choice="fire">🔥</span>
+          <span class="emoji" data-choice="water">💧</span>
+          <span class="emoji" data-choice="leaf">🍃</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup" class="popup hidden">
+      <div class="popup-content">
+        <h2 id="result"></h2>
+        <button onclick="resetGame()">Play Again</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
